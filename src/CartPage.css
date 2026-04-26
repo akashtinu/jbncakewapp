@@ -48,9 +48,8 @@
   color: #666;
 }
 
-.close-cart-btn,
-.remove-item-btn {
-  background: #c73074;
+.close-cart-btn {
+  background: rgba(199, 48, 118, 0.95);
   color: #fff;
   border: none;
   border-radius: 0.5rem;
@@ -58,11 +57,31 @@
   cursor: pointer;
   transition: background 0.2s ease;
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
-.close-cart-btn:hover,
+.close-cart-btn:hover {
+  background: rgb(160, 30, 90);
+}
+
+.remove-item-btn {
+  background: #dc2626;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
 .remove-item-btn:hover {
-  background: #a52a5f;
+  background: #b91c1c;
 }
 
 @media (max-width: 480px) {
@@ -289,6 +308,10 @@
   cursor: pointer;
   transition: background 0.2s ease;
   min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .place-order-btn:hover {
