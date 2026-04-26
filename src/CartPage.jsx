@@ -10,7 +10,7 @@ function CartPage({ onClose }) {
       `${item.name}\nWeight: ${item.weight}g\nPrice: ₹${(item.price * (item.weight / 500)).toFixed(2)}\nCelebration: ${item.celebration || 'N/A'}\nWhose Name: ${item.whoseName || 'N/A'}`
     ).join('\n\n') + `\n\nTotal: ₹${cartTotal.toFixed(2)}`;
 
-    const whatsappUrl = `https://wa.me/9787951525?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/919787951525?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     clearCart();
     onClose();
